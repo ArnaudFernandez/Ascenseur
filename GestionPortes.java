@@ -5,6 +5,12 @@ public class GestionPortes {
 		private String typePorte;
 		private int numEtagePorte;
 		
+		public Porte(String typePorte, int numEtagePorte) {
+			super();
+			this.typePorte = typePorte;
+			this.numEtagePorte = numEtagePorte;
+		}
+	
 		public String getTypePorte() {
 			return typePorte;
 		}
@@ -17,23 +23,20 @@ public class GestionPortes {
 		public void setNumEtagePorte(int numEtagePorte) {
 			this.numEtagePorte = numEtagePorte;
 		}
-		
-		public Porte(String typePorte, int numEtagePorte) {
-			super();
-			this.typePorte = typePorte;
-			this.numEtagePorte = numEtagePorte;
-		}
 	}
+	private int numero;
+	private String etatOuverture; 
+	private Porte porte1;
+	private Porte porte2;
+	
+	
 	public GestionPortes(int numero, String etatOuverture) {
 		this.numero = numero;
 		this.etatOuverture = etatOuverture;
 		this.porte1 = new Porte(etatOuverture, numero);
 		this.porte2 = new Porte(etatOuverture, numero);
 	}
-	private int numero;
-	private String etatOuverture; 
-	private Porte porte1;
-	private Porte porte2;
+	
 
 	public int getNumero() {
 		return numero;
