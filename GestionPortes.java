@@ -1,12 +1,11 @@
 package sprint2;
 
 public class GestionPortes {
-	public class Porte {
+	public static class Portes {
 		private String typePorte;
 		private int numEtagePorte;
 		
-		public Porte(String typePorte, int numEtagePorte) {
-			super();
+		public Portes(String typePorte, int numEtagePorte) {
 			this.typePorte = typePorte;
 			this.numEtagePorte = numEtagePorte;
 		}
@@ -26,15 +25,15 @@ public class GestionPortes {
 	}
 	private int numero;
 	private String etatOuverture; 
-	private Porte porte1;
-	private Porte porte2;
+	private Portes porte1;
+	private Portes porte2;
 	
 	
 	public GestionPortes(int numero, String etatOuverture) {
 		this.numero = numero;
 		this.etatOuverture = etatOuverture;
-		this.porte1 = new Porte(etatOuverture, numero);
-		this.porte2 = new Porte(etatOuverture, numero);
+		this.porte1 = new Portes(etatOuverture, numero);
+		this.porte2 = new Portes(etatOuverture, numero);
 	}
 	
 

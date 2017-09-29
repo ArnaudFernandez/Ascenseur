@@ -1,18 +1,18 @@
 package sprint2;
 
 
-public class gestionCabine {
+public class GestionCabines {
 
     private int numEtage;
     private enumEtageCabine etageCabine;
 
 
-    public gestionCabine() {
+    public GestionCabines() {
         this.numEtage = 0;
         this.etageCabine = enumEtageCabine.ARRET_FERMER;
     }
 
-    public gestionCabine(int numEtage, enumEtageCabine etageCabine) {
+    public GestionCabines(int numEtage, enumEtageCabine etageCabine) {
         this.numEtage = numEtage;
         this.etageCabine = etageCabine ;
     }
